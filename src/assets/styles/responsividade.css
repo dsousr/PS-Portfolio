@@ -39,12 +39,11 @@
   }
 
   .profile-card {
-    max-width: 90%;
-    width: 95%;
+    width: 90% !important;
     margin-left: 20px;
   }
 
   .section-selection-buttons{
-    gap: 10px !important;
+    gap: 5px !important;
   }
 }
