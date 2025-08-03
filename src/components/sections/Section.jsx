@@ -1,4 +1,5 @@
 import './Section.css'
+import '../../assets/styles/responsividade.css'
 
 import Aside from './aside/Aside.jsx'
 import Main from './main/Main.jsx'
@@ -7,14 +8,14 @@ function Section(){
 
 return(
 
-    <section id='M-Section'>
+    <section id='Section-container'>
 
         <article>
             <Aside/>
         </article>
-        <main>
+        <section className='Section-main'>
             <Main/>
-        </main>
+        </section>
 
     </section>
 

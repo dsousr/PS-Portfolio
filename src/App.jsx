@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import './assets/styles/globalStyles.css'
 
 import Header from './components/header/Header.jsx';

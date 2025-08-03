@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 
-html, css, #root{
+html, body, #root{
   height: 100%;
   width: 100%;
   background-color: white;
@@ -14,10 +14,4 @@ html, css, #root{
 .highlight{
   color: rgb(143, 143, 236);
   text-decoration: underline;
-}
-
-.Icon {
-    height: 40px; 
-    width: 40px;
-    object-fit: contain;
 }

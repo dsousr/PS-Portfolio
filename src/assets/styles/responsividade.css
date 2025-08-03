@@ -1,0 +1,32 @@
+@media (max-width: 1200px) {
+  header {
+    display: none;
+  }
+
+  #Section-container {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  article {
+    width: 100%;
+    min-height: 690px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid black;
+    background-color: rgb(138, 138, 226);
+  }
+
+  .profile-card {
+    position: relative !important;
+  }
+
+  .Section-main {
+    width: 100%;
+    height: 600px;
+    padding: 40px 20px;
+  }
+}

@@ -1,0 +1,52 @@
+main{
+    min-height: 500px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.Sections{
+    min-height: 500px;
+    height: 70vh;
+    width: 90%;
+    border: solid black 2px;
+    border-radius: 20px;
+}
+
+/*Botões*/
+
+.section-selection-buttons{
+    min-height: 50px;
+    height: 60px;
+    width: 90%;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons-to-select-sections{
+  min-height: 50px;
+  min-width: 60px;
+  height: 100%;
+  width: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: solid black 2px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.img-Button-section{
+    max-height: 40px;
+    height: auto;
+    width: auto;
+    min-height: 30px;
+    object-fit: contain;
+}
