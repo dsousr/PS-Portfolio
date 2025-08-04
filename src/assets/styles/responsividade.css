@@ -35,7 +35,7 @@
 @media (max-width: 576px){
   article {
     min-height: 600px;
-    padding: 20px;
+    padding: 20px 0;
   }
 
   .profile-card {
