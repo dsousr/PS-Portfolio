@@ -1,0 +1,122 @@
+.projects{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.projects h2{
+    font-size: 4rem;
+}
+
+.projects-container{
+    width: 80vw;
+    padding: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: solid white 4px;
+    border-bottom: solid white 4px;
+    gap: 4rem;
+}
+
+.proj-card{
+    width: 390px;
+    min-height: 550px;
+    border: solid 2px var(--main-color);
+    border-radius: 20px;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.proj-card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 0 10px var(--main-color),
+            0 0 10px var(--main-color),
+            0 0 50px var(--main-color);
+}
+.Pj-img-container{
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Pj-img-container img {
+    width: 200px;
+    height: auto;
+    object-fit: contain;
+}
+
+.proj-card h3{
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.p-description{
+    margin: 5px 20px;
+    padding: 20px 20px;
+    overflow-y: auto;
+    border-top: solid white 2px;
+    border-bottom: solid white 2px;
+}
+
+.proj-skills{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.icon-skill-used-in-project{
+    width: 3rem;
+}
+
+.proj-more-infs{
+    width: 100%;
+    display: flex;
+    padding: 20px 0;
+}
+
+.proj-more-infs a{
+    font-weight: 600;
+    width: 50%;
+    padding: 20px 0;
+    margin: 0 20px;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(
+        270deg,
+        rgb(0, 0, 238),
+        var(--main-color)
+  );
+    border-radius: 40px;
+    transition: 0.3s ease-in-out;
+}
+
+.proj-more-infs a:hover{
+    transform: scale(1.1);
+}
+
+.proj-more-infs p{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 800px) {
+  .projects-container{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .proj-card{
+    width: 80vw;
+  }
+  .projects h2{
+    font-size: 3rem;
+  }
+}
