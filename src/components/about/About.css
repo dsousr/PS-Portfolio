@@ -37,12 +37,13 @@
 }
 
 .skill-card{
+    margin-top: 20px;
     min-width: 150px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 1.2rem;
+    gap: 1rem;
 }
 
 .skill-card img{
@@ -64,9 +65,12 @@
 }
 
 @media (max-width: 800px) {
+    .skill-card{
+        width: 100px;
+    }
     
     .skill-card img{
-        width: 4rem;
+        width: 3rem;
     }
     .about-me h2{
         font-size: 3rem;
