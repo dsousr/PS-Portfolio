@@ -9,7 +9,6 @@ html, body, #root{
   color: white;
   font-family: Arial;
   background-color: black;
-  overflow-x: hidden;
   scroll-behavior: smooth;
 }
 
