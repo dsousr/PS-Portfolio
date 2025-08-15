@@ -2,8 +2,27 @@ import './Home.css'
 
 import GitHub from '../../assets/icons/github.png'
 import LinkedIn from '../../assets/icons/linkedin.png'
+import Insta from '../../assets/icons/instagram.png'
 
 import Photo from '../../assets/img/photo.jpg'
+
+const social = [
+    {
+        social_icon: GitHub,
+        social_title:'GitHub',
+        social_link: 'https://github.com/dsousr'
+    },
+    {
+        social_icon: Insta,
+        social_title:'Instagram',
+        social_link: 'https://www.instagram.com/dsousr.dev/'
+    },
+    {
+        social_icon: LinkedIn,
+        social_title:'LinkedIn',
+        social_link: 'https://www.linkedin.com/in/dsousr/'
+    }
+]
 
 function Home(){
 
@@ -24,12 +43,13 @@ return(
                 o desenvolvimento de interfaces modernas, focadas em usabilidade e design intuitivo!
             </p>
             <div className="social-icons">
-                <a href="https://github.com/dsousr">
-                    <img src={GitHub} alt="GitHub" />
-                </a>
-                <a href="https://www.linkedin.com/in/dsousr/">
-                    <img src={LinkedIn} alt="LinkedIn" />
-                </a>
+                
+                {social.map((item, i) => (
+                    <a key={i} href={item.social_link} target='_blank'>
+                        <img src={item.social_icon} alt={item.social_title} />
+                    </a>
+                ))}
+
             </div>
             <div className='btn-header-in-home'>               
                 <a className='btn-home'

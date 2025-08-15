@@ -3,6 +3,7 @@ import './Footer.css'
 import GitHub from '../../assets/icons/github.png'
 import LinkedIn from '../../assets/icons/linkedin.png'
 import Email from '../../assets/icons/email.png'
+import Insta from '../../assets/icons/instagram.png'
 
 function Footer(){
 
@@ -21,6 +22,13 @@ return(
                 <img src={GitHub} alt="GitHub" />
                 <p>
                     GitHub
+                </p>
+            </a>
+            <a className="contacts-footer"
+            href='https://www.instagram.com/dsousr.dev/'>
+                <img src={Insta} alt="Instagram" />
+                <p>
+                    Instagram
                 </p>
             </a>
             <a className="contacts-footer"

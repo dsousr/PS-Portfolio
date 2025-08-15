@@ -8,6 +8,23 @@
     padding: 25px 0;
 }
 
+.animated-text{
+    font-family: monospace;
+    color: var(--main-color);
+    font-weight: 900;
+    border-right: solid white 2px;
+    width: 26ch;
+    text-wrap: nowrap;
+    overflow: hidden;
+    animation: typing 4s steps(25) infinite alternate-reverse;
+}
+
+@keyframes typing {
+    from{
+        width: 0ch;
+    }
+}
+
 .container-footer{
     display: flex;
     gap: 60px;

@@ -62,6 +62,8 @@
     overflow-y: auto;
     border-top: solid white 2px;
     border-bottom: solid white 2px;
+    text-align: center;
+    font-weight: 550;
 }
 
 .proj-skills{
@@ -78,6 +80,7 @@
     width: 100%;
     display: flex;
     padding: 20px 0;
+    margin-top: auto;
 }
 
 .proj-more-infs a{
@@ -105,6 +108,45 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 1rem;
+}
+
+.proj-more-infs img{
+    width: 2rem;
+    padding: 10px;
+    background: linear-gradient(
+        270deg,
+        blue,
+        var(--main-color)
+    );
+    border-radius: 20px;
+}
+.project-info-icon {
+    position: relative;
+    display: inline-block;
+
+}
+
+.project-info-icon:hover{
+    transform: scale(1.1);
+}
+
+.project-inf-icon:hover::after{
+    color: black;
+    font-weight: 600;
+    content: 'O projeto ainda pode receber atualizações!';
+    width: 250px;
+    padding: 10px;
+    margin-top: 45px;
+    border-radius: 0 30px 30px 30px;
+    display: flex;
+    text-align: center;
+    position: absolute;
+    background: linear-gradient(
+        270deg,
+        blue,
+        var(--main-color)
+    );
 }
 
 @media (max-width: 800px) {
@@ -119,4 +161,12 @@
   .projects h2{
     font-size: 3rem;
   }
+  .proj-more-infs img{
+    margin-right: 10px;
+    }
+  .project-inf-icon:hover::after{
+    margin: 30px 0 0 20px;
+    left: 0;
+    border-radius: 20px;
+    }
 }
