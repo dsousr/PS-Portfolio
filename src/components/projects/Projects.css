@@ -1,0 +1,253 @@
+.projects {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.projects h2 {
+  font-size: 4rem;
+}
+
+.projects-container {
+  width: 80vw;
+  padding: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-top: solid white 4px;
+  border-bottom: solid white 4px;
+  gap: 4rem;
+}
+
+.proj-card {
+  width: 900px;
+  display: flex;
+  flex-direction: column;
+  border: solid 2px var(--main-color);
+  border-radius: 20px;
+  padding: 20px;
+  transition: 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+.proj-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 10px var(--main-color), 0 0 10px var(--main-color), 0 0 50px var(--main-color);
+}
+
+.proj-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Pj-img {
+  width: 200px;
+  height: auto;
+  object-fit: contain;
+}
+
+.proj-header h3 {
+  text-align: center;
+  font-weight: 900;
+  font-size: 2.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.proj-card button {
+  background-color: transparent;
+  border: none;
+  padding: 20px;
+  transition: transform 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.proj-card button.rotated {
+  transform: rotate(180deg);
+}
+
+.Access-inf-img {
+  width: 80px;
+  height: auto;
+  object-fit: contain;
+  transition: transform 0.3s ease-in-out;
+}
+
+.proj-card button:hover .Access-inf-img {
+  transform: translateY(-20px);
+}
+
+/* Informações do projeto*/
+
+.proj-details {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  overflow-y: auto;
+}
+
+.details-content h5{
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    border-top: solid  var(--main-color) 2px;
+    padding-top: 20px;
+}
+
+.proj-details.open {
+  max-height: 500px;
+  opacity: 1;
+}
+
+.details-content {
+  padding-top: 20px;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.details-content h4{
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.p-description {
+    letter-spacing: 1px;
+    margin: 5px 20px;
+    padding: 20px;
+    overflow-y: auto;
+    text-align: center;
+    font-weight: 550;
+}
+
+.proj-skills {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 20px 0;
+}
+
+.icon-skill-used-in-project {
+  width: 3rem;
+}
+/*detalhes*/
+
+.proj-more-infs {
+  width: 100%;
+  display: flex;
+  padding: 20px 0;
+  margin-top: auto;
+}
+
+.proj-more-infs a {
+  font-weight: 600;
+  width: 60%;
+  padding: 20px 0;
+  margin: 0 20px;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(270deg, rgb(0, 0, 238), var(--main-color));
+  border-radius: 40px;
+  transition: 0.3s ease-in-out;
+  text-decoration: none;
+  color: white;
+}
+
+.proj-more-infs a:hover {
+  transform: scale(1.04);
+}
+
+.proj-more-infs p {
+  font-weight: bolder;  
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.proj-more-infs img {
+  width: 2rem;
+  padding: 10px;
+  background: linear-gradient(270deg, blue, var(--main-color));
+  border-radius: 20px;
+}
+
+/*telas*/
+
+.proj-screens{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+}
+
+.screen-img{
+    margin-top: 20px;
+    width: 400px;
+    border-radius: 20px;
+}
+
+@media (max-width: 800px) {
+    .projects-container {
+        width: 90%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    .proj-card {
+        width: 80vw;
+    }
+    
+    .projects h2 {
+        font-size: 3rem;
+    }
+    
+    .proj-more-infs {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    .proj-more-infs a,
+    .proj-more-infs p {
+        width: 100%;
+        margin: 0;
+    }
+    
+    .project-inf-icon:hover::after {
+        margin: 30px 0 0 20px;
+        left: 0;
+        border-radius: 20px;
+    }
+    
+    .proj-header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .proj-screens{
+        display: flex;
+        gap: 10px;
+        overflow-x: auto;
+    }
+
+    .screen-img{
+        margin-top: 5px;
+        margin-bottom: 10px;
+        width: 390px;
+    }
+
+    .p-description {
+      text-align: left;
+      padding: 20px 0;
+  }
+}
