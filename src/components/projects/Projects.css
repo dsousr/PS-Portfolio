@@ -196,15 +196,17 @@
     border-radius: 20px;
 }
 
+@media (max-width: 1280px) {
+    .proj-card {
+        width: 80vw;
+    }
+}
+
 @media (max-width: 800px) {
     .projects-container {
         width: 90%;
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-    }
-    
-    .proj-card {
-        width: 80vw;
     }
     
     .projects h2 {

@@ -27,7 +27,7 @@ return(
         </nav>
 
         <a className='btn'
-        href='mailto:hnsousr@gmail.com'>
+        href='#contact'>
             Contate-me
         </a>
 
