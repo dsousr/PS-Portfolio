@@ -122,6 +122,9 @@
 }
 
 @media (max-width: 800px){
+    .services h2{
+        font-size: 3rem;
+    }
     .running {
         gap: 0;
         animation: scrolling 10s linear infinite;

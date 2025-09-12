@@ -1,6 +1,6 @@
 /*Imgs */
 import Design from '../../assets/services-skill/design.png'
-import Code from '../../assets/services-skill/code.png'
+import Front from '../../assets/services-skill/front.png'
 import Back from '../../assets/services-skill/back.png'
 
 /*Icons */
@@ -31,18 +31,18 @@ export const services = [
     service_icon: Design,
     service_title: 'UI Design',
     Service_description:
-      'Design de interfaces focado em usabilidade e identidade visual.',
+      'Criação de interfaces intuitivas, priorizando a usabilidade e a coerência da identidade visual.',
   },
   {
-    service_icon: Code,
+    service_icon: Front,
     service_title: 'Front-End',
     Service_description:
-      'Criação de interfaces elegantes, intuitivas e responsivas, focadas em proporcionar a melhor experiência para o usuário.',
+      'Criação de interfaces intuitivas e responsivas, focadas em proporcionar a melhor experiência para o usuário.'
   },
   {
     service_icon: Back,
     service_title: 'Back-End',
     Service_description:
-      'Desenvolvimento back-end com Python e Node.js, aplicando boas práticas e código limpo.',
+      'Desenvolvimento back-end com foco em eficiência, boas práticas e código limpo.',
   },
 ]

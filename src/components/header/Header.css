@@ -29,14 +29,13 @@
 }
 
 .navbar a{
+    font-weight: 700;
     font-size: 1.2rem;
     letter-spacing: 1px;
     transition: 0.3s ease-in-out;
 }
 
 .navbar a:hover{
-    transform: scale(1.1);
-    border-bottom: solid var(--main-color) 3px;
     color: var(--main-color);
 }
 

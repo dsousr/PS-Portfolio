@@ -40,7 +40,7 @@
         var(--secondary-color)
     );
     border-radius: 80px;
-    padding: 0 3rem;
+    padding: 1rem 3rem;
     transition: 0.4s ease-in-out;
 }
 
@@ -56,14 +56,14 @@
     text-align: center;
     letter-spacing: 1px;
     font-weight: 900;
-    font-size: 1.4rem;
+    font-size: 2rem;
 }
 
 .card-about-infs span{
     text-align: center;
     letter-spacing: 1px;
-    font-weight: 800;
-    font-size: 1rem;
+    font-weight: 900;
+    font-size: 1.2rem;
 }
 
 @media (max-width: 800px) {
@@ -80,17 +80,9 @@
 
     .card-about-infs{
         height: 300px;
-        border-radius: 20px;
     }
-    .card-about-infs h3{
-        font-weight: 600;
-        font-size: 1.3rem;
-    }
-
     .card-about-infs span{
-        text-align: center;
         letter-spacing: 1px;
-        font-weight: 600;
         font-size: 14px;
     }   
 }

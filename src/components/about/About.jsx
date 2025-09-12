@@ -27,7 +27,7 @@ return(
                 
                 <img src={Graduation} alt="Imagem de Graduação" />
                 <h3>               
-                    Bacharelado em Ciência da Computação
+                    Ciência da Computação
                 </h3>
                 <span>
                     6º Semestre - cursando

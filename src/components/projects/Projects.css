@@ -88,13 +88,14 @@
   overflow: hidden;
   transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
   overflow-y: auto;
+  border-top: solid white 4px;
 }
 
 .details-content h5{
     font-size: 1.2rem;
     display: flex;
     justify-content: center;
-    border-top: solid  var(--main-color) 2px;
+    border-top: solid  var(--main-color) 1px;
     padding-top: 20px;
 }
 

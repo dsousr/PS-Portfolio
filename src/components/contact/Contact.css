@@ -53,12 +53,6 @@
     transition: 0.3s ease-in-out;
 }
 
-.btn-send-email:hover{
-    box-shadow: 0 0 10px var(--main-color),
-                0 0 10px var(--main-color),
-                0 0 10px var(--main-color);   
-}
-
 .btn-send-email.success {
     background: linear-gradient(
         270deg,
