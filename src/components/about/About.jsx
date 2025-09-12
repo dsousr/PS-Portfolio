@@ -1,33 +1,8 @@
 import './About.css'
 
-/*Icons */
-import JSicon from '../../assets/skills/js.png'
-import Reacticon from '../../assets/skills/react.png'
-import Pythonicon from '../../assets/skills/py.png'
-import Giticon from '../../assets/skills/git.png'
-import Node from '../../assets/skills/nodeJS.png'
-
-import HTMLicon from '../../assets/skills/html.png'
-import Cssicon from '../../assets/skills/css.png'
-import TailWindicon from '../../assets/skills/tailwind.png'
-import Figmaicon from '../../assets/skills/figma.png'
+import Graduation from '../../assets/img/graduation.png'
 
 function About(){
-
-const SkillsBack = [
-    {icon: Pythonicon, title: 'Python'},
-    {icon: JSicon, title: 'Java Script'},
-    {icon: Reacticon, title: 'React'},
-    {icon: Node, title: 'Node.js'},
-    {icon: Giticon, title: 'Git'}
-]  
-
-const SkillsFront = [
-    {icon: Figmaicon, title: 'Figma'},
-    {icon: HTMLicon, title: 'HTML'},
-    {icon: Cssicon, title: 'Css'},
-    {icon: TailWindicon, title: 'TailWind Css'},
-]
 
 return(
 
@@ -46,39 +21,19 @@ return(
             </p>
 
         </div>
-        <div className="about-skills">
+        <div className="about-infs">
 
-            <h2>
-                <span className='highlight'>Tecnologias</span>
-            </h2>
-            <div className="skillscontainer">
+            <div className="card-about-infs">
+                
+                <img src={Graduation} alt="Imagem de Graduação" />
+                <h3>               
+                    Bacharelado em Ciência da Computação
+                </h3>
+                <span>
+                    6º Semestre - cursando
+                </span>
 
-                    <div className="skills-group">
-
-                        {SkillsFront.map((skill, index) => (
-                            <div className="skill-card">
-                                <img src={skill.icon} alt={skill.title}/>
-                                <p>
-                                    {skill.title}
-                                </p>
-                            </div>
-                        ))}
-
-                    </div>
-                    <div className="skills-group">
-
-                        {SkillsBack.map((skill, index) => (
-                            <div className="skill-card">
-                                <img src={skill.icon} alt={skill.title} />
-                                <p>
-                                    {skill.title}
-                                </p>
-                            </div>
-                        ))}
-
-                    </div>
-
-                </div>
+            </div>
 
         </div>
 

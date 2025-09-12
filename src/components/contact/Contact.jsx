@@ -42,7 +42,7 @@ return(
                     <input placeholder='Assunto' type="text" name='subject'/>                 
                   </div>
 
-                  <textarea placeholder='Digite sua mensagem aqui!...' name="message" rows="5" required></textarea>
+                  <textarea placeholder='Digite sua mensagem aqui...' name="message" rows="5" required></textarea>
               </div>
 
               <button className='btn-send-email' type='submit'>

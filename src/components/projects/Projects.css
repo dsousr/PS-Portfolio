@@ -17,8 +17,6 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  border-top: solid white 4px;
-  border-bottom: solid white 4px;
   gap: 4rem;
 }
 

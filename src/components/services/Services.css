@@ -16,14 +16,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border-top: solid white 4px;
     gap: 4rem;
 }
 
 .service-card{
-    max-width: 450px;
     width: 450px;
-    height: 650px;
+    height: 600px;
     color: black;
     border: solid 4px var(--main-color);
     border-radius: 20px;
@@ -43,17 +41,15 @@
 
 .Service-icon{
     width: 40%;
-    margin-top: 80px;
     padding: 40px;
     background-color: var(--main-color);
     border-radius: 20px;
 }
 
 .service-card h3{
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 800;
     width: 100%;
-    height: 5rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -67,25 +63,52 @@
     text-align: center;
 }
 
-@media (max-width: 1280px) {
+/*Carrossel*/
+.carousel {
+    overflow: hidden;
+    width: 75vw;
+    padding: 1.5rem;
+    border: solid var(--main-color) 4px;
+    border-radius: 30px;
+}
+
+.running {
+    display: flex;
+    gap: 4rem;
+    animation: scrolling 20s linear infinite;
+}
+
+.skill-card{
+    min-width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.skill-card img{
+    width: 4rem;
+}
+
+.skill-card p{
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+
+@media (max-width: 1680px){
     .container-services{
-        width: 90%;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        }
-    .service-card{
-        width: 80vw;
-    }
-    .services h2{
-        font-size: 3rem;
     }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1180px) {
     .container-services{
         width: 90%;
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
     }
     .service-card{
         height: 400px;
@@ -96,4 +119,22 @@
         margin-top: 0;
         width: 6rem;
     }
+}
+
+@media (max-width: 800px){
+    .running {
+        gap: 0;
+        animation: scrolling 10s linear infinite;
+    }
+    .skill-card img{
+        width: 3rem;
+    }
+    .skill-card p{
+        font-size: 1rem;
+    }
+}
+
+@keyframes scrolling {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
 }

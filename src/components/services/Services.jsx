@@ -1,29 +1,8 @@
 import './Services.css'
 
-/*Imagens */
-import Design from '../../assets/services-skill/design.png'
-import Code from '../../assets/services-skill/code.png'
-import Back from '../../assets/services-skill/back.png'
+import {Skills, services} from './ServicesData'
 
 function Services(){
-
-const services = [
-    {
-        service_icon: Design,
-        service_title: 'Ui Design',
-        Service_description: 'Desenvolvo interfaces focadas em experiência do usuário e identidade visual, criando protótipos e layouts responsivos enquanto aprimoro minhas habilidades em UX e design.',
-    },
-    {
-        service_icon: Code,
-        service_title: 'Front-End',
-        Service_description: 'Aprendendo e desenvolvendo interfaces responsivas e acessíveis com HTML, CSS, JavaScript e React, aplicando boas práticas de código e buscando minha primeira experiência profissional na área.',
-    },
-    {
-        service_icon: Back,
-        service_title: 'Back-End',
-        Service_description: 'Estou aprendendo e praticando desenvolvimento back-end com Python e Node.js, explorando boas práticas de código limpo, segurança e performance em pequenos projetos pessoais.',
-    }
-]
 
 return(
 
@@ -34,8 +13,8 @@ return(
         </h2>
         <div className="container-services">
 
-            {services.map((service, index) => (
-                <div className="service-card">
+            {services.map((service, i) => (
+                <div className="service-card" key={i}>
                     <img className='Service-icon'
                     src={service.service_icon} alt={service.service_title} />
                     <h3>
@@ -46,6 +25,25 @@ return(
                     </p>
                 </div>
             ))}
+
+        </div>
+        <div className="carousel">
+
+            <div className="running">
+                {Skills.map((skill, index) => (
+                    <div className="skill-card" key={index}>
+                        <img src={skill.icon} alt={skill.title}/>
+                        <p>{skill.title}</p>
+                    </div>
+                ))}
+                {Skills.map((skill, index) => (
+                    <div className="skill-card" key={index + Skills.length}>
+                        <img src={skill.icon} alt={skill.title}/>
+                        <p>{skill.title}</p>
+                    </div>
+                ))}
+                
+            </div>
 
         </div>
 
