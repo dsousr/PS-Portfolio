@@ -134,6 +134,12 @@
     }
 }
 
+@media (max-width: 600px){
+    .service-card{
+        width: 80vw;
+    }
+}
+
 @keyframes scrolling {
     0% { transform: translateX(0); }
     100% { transform: translateX(-50%); }
