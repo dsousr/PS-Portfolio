@@ -7,8 +7,18 @@ import {PJS} from './ProjectsData'
 import BottArrow from '../../assets/icons/arrow-bottom.png'
 
 function Projects() {
-    
+
+  const [filter, setFilter] = useState("all")
+  const filteredPJ = PJS.filter(project => project.Filters.includes(filter));  
+
   const [openInfs, setOpenInfs] = useState(null)
+
+  const counts = PJS.reduce((acc, project) => {
+  project.Filters.forEach(filter => {
+      acc[filter] = (acc[filter] || 0) + 1
+  });
+  return acc;
+  }, {});
 
   const OpenCard = (i) => {
     setOpenInfs(openInfs === i ? null : i)
@@ -21,9 +31,45 @@ function Projects() {
         <h2>
             <span className='highlight'>Projetos</span>
         </h2>
+
+        <div className="proj-filter">
+            <ul>
+                <li
+                    className={filter === 'all' ? 'active' : ''}
+                    onClick={() => setFilter('all')}
+                >
+                    Todos [{counts.all}]
+                </li>
+                <li
+                    className={filter === 'front-end' ? 'active' : ''}
+                    onClick={() => setFilter('front-end')}
+                >
+                    Front-End [{counts["front-end"]}]
+                </li>
+                <li
+                    className={filter === 'design' ? 'active' : ''}
+                    onClick={() => setFilter('design')}
+                >
+                    Design [{counts.design}]
+                </li>
+                <li
+                    className={filter === 'automation' ? 'active' : ''}
+                    onClick={() => setFilter('automation')}
+                >
+                    Automação [{counts.automation}]
+                </li>
+                <li
+                    className={filter === 'game' ? 'active' : ''}
+                    onClick={() => setFilter('game')}
+                >
+                    Games [{counts.game}]
+                </li>
+            </ul>
+        </div>
+
         <div className="projects-container">
 
-            {PJS.map((project, index) => (
+            {filteredPJ.map((project, index) => (
             <div className="proj-card" key={index}>
 
                 <div className="proj-header">

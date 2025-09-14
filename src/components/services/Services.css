@@ -7,7 +7,7 @@
 }
 
 .services h2{
-    font-size: 4rem;
+    font-size: 3rem;
 }
 
 .container-services{
@@ -20,8 +20,8 @@
 }
 
 .service-card{
-    width: 450px;
-    height: 600px;
+    width: 350px;
+    height: 500px;
     color: black;
     border: solid 4px var(--main-color);
     border-radius: 20px;
@@ -67,7 +67,7 @@
 .carousel {
     overflow: hidden;
     width: 75vw;
-    padding: 1.5rem;
+    padding: 1rem;
     border: solid var(--main-color) 4px;
     border-radius: 30px;
 }
@@ -88,27 +88,19 @@
 }
 
 .skill-card img{
-    width: 4rem;
+    width: 3rem;
 }
 
 .skill-card p{
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 800;
 }
 
-@media (max-width: 1680px){
-    .container-services{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 1180px) {
+@media (max-width: 1280px) {
     .container-services{
         width: 90%;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
     }
     .service-card{
         height: 400px;
@@ -122,12 +114,16 @@
 }
 
 @media (max-width: 800px){
+    .container-services{
+        display: flex;
+        flex-direction: column;
+    }
     .services h2{
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
     .running {
         gap: 0;
-        animation: scrolling 10s linear infinite;
+        animation: scrolling 6s linear infinite;
     }
     .skill-card img{
         width: 3rem;

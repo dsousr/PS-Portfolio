@@ -7,31 +7,31 @@
 }
 
 .contact h2{
-    font-size: 4rem;
+    font-size: 3rem;
 }
 
 .contact form{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 3rem;
+    gap: 2rem;
     flex-direction: column;
 }
 
 .form-group{
     display: flex;
-    gap: 6rem;
+    gap: 5rem;
 }
 
 .contact form .input-group input,
 .contact form textarea{
     width: 100%;
-    padding: 1.5rem;
-    font-size: 1.4rem;
+    padding: 1.2rem;
+    font-size: 1.2rem;
     color: white;
     border-radius:20px;
     border: solid var(--main-color) 2px;
-    margin: 1.5rem 0;
+    margin: 1rem 0;
     resize: none;
     background-color: transparent;
     box-sizing: border-box;
@@ -39,7 +39,7 @@
 
 .btn-send-email{
     width: 100%;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     letter-spacing: 2px;
     font-weight: 900;
     background: linear-gradient(
@@ -47,7 +47,7 @@
         rgb(0, 0, 238),
         var(--main-color)
     );
-    padding: 1.5rem 2rem;
+    padding: 1rem;
     border: none;
     border-radius: 25px;
     transition: 0.3s ease-in-out;
@@ -109,7 +109,7 @@
         font-size: 1.2rem;
     }
     .contact h2{
-        font-size: 3rem;
+        font-size: 2.5rem;
         text-align: center;
     }
     .contact form{
