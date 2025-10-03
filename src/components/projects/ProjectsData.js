@@ -16,11 +16,15 @@ import CollabStory from '../../assets/screens/stories/collab-story.png'
 import MeteorHome from '../../assets/screens/meteor/meteor-home.png'
 import MeteorGame from '../../assets/screens/meteor/meteor-game.png'
 
+import WhiteNetBoard from '../../assets/screens/netboard/white-home.png'
+import DarkNetBoard from '../../assets/screens/netboard/dark-home.png'
+
 /* imgs */
 import Portfolio from '../../assets/projects-img/portfolio.png'
 import Stories from '../../assets/projects-img/stories.png'
 import Automation from '../../assets/projects-img/automation.png'
 import Game from '../../assets/projects-img/game.png'
+import DashBoard from '../../assets/projects-img/dashboard.png'
 
 export const PJS = [
   {
@@ -67,6 +71,19 @@ export const PJS = [
     Proj_screens: [
       { img: MeteorHome, alt: 'Tela inicial' },
       { img: MeteorGame, alt: 'Tela do jogo rodando ' },
+    ]
+  },
+  {
+    Proj_img: DashBoard,
+    Proj_title: 'Dash Board Redes',
+    Filters: ['all'],
+    Proj_description: 'Trabalho acadêmico em grupo para desenvolvimento de um dashboard que captura endereços IP e exibe informações sobre eles.',
+    Proj_skills: [HTMLicon, Cssicon, JSicon, Reacticon],
+    Proj_link: 'https://github.com/MayColdHeart/NetBoard',
+    Proj_status: 'Finalizado',
+    Proj_screens: [
+      { img: WhiteNetBoard, alt: 'NetBoard com tema padrão' },
+      { img: DarkNetBoard, alt: 'NetBoard com tema escuro' },
     ]
   },
 ];
