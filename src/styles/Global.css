@@ -1,0 +1,77 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+html, body, #root{
+  height: 100%;
+  width: 100%;
+  color: white;
+  font-family: Arial;
+  background-color: black;
+  scroll-behavior: smooth;
+}
+
+:root{
+  --main-color: rgb(134, 134, 197);
+  --secondary-color: rgb(64, 64, 214);
+}
+
+section{
+  min-height: 100vh;
+  padding: 5rem 15%;
+}
+
+h2{
+  cursor: default;
+}
+
+a{
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+ul{
+  list-style: none;
+}
+
+button{
+  cursor: pointer;
+}
+
+input, textarea:focus{
+  outline: none;
+}
+
+.highlight{
+  background: linear-gradient(
+    270deg,
+    var(--secondary-color),
+    var(--main-color)
+  );
+  background-clip: text;
+  color: transparent;
+}
+
+::-webkit-scrollbar{
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--main-color);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/*Não muda o BG-C em respostas automaticas*/
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0 1000px transparent inset !important;
+  -webkit-text-fill-color: white !important;
+  transition: background-color 5000s ease-in-out 0s;
+}

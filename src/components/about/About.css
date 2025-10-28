@@ -1,0 +1,84 @@
+.about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5rem;
+}
+
+/*Sobre mim*/
+.about-me{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.about h2{
+    font-size: 3rem;
+}
+
+/*Informações*/
+.about-infs{
+    display: flex;
+    justify-content: center;
+}
+
+.card-about-infs{
+    color: black;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    background: linear-gradient(
+        270deg,
+        var(--main-color),
+        var(--secondary-color)
+    );
+    border-radius: 6rem;
+    padding: 1rem 2rem;
+    transition: 0.4s ease-in-out;
+}
+
+.card-about-infs:hover{
+    transform: scale(1.05);
+}
+
+.card-about-infs img{
+    width: 6rem;
+}
+
+.card-about-infs h3{
+    text-align: center;
+    letter-spacing: 1px;
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+
+.card-about-infs span{
+    cursor: default;
+    text-align: center;
+    letter-spacing: 1px;
+    font-weight: 800;
+}
+
+@media (max-width: 800px) {
+    .skill-card{
+        width: 100px;
+    }
+    
+    .skill-card img{
+        width: 3rem;
+    }
+    .about-me h2{
+        font-size: 2.5rem;
+    }
+
+    .card-about-infs{
+        height: 300px;
+    }
+    .card-about-infs span{
+        letter-spacing: 1px;
+        font-size: 14px;
+    }   
+}

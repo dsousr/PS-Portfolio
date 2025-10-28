@@ -1,0 +1,154 @@
+.services{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.services h2{
+    font-size: 3rem;
+}
+
+.container-services{
+    width: 80vw;
+    padding: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.service-card{
+    width: 350px;
+    height: 500px;
+    color: black;
+    border: solid 4px var(--main-color);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    background-color: var(--main-color);
+    transition: 0.4s ease-in-out;
+}
+
+.service-card:hover{
+    background-color: black;
+    color: var(--main-color);
+    transform: scale(1.04);
+}
+
+.Service-icon{
+    width: 40%;
+    padding: 40px;
+    background-color: var(--main-color);
+    border-radius: 20px;
+}
+
+.service-card h3{
+    font-size: 3rem;
+    font-weight: 800;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.service-card p{
+    cursor: default;
+    font-weight: 500;
+    margin: 20px 40px;
+    font-weight: 600;
+    display: flex;
+    text-align: center;
+}
+
+/*Carrossel*/
+.carousel {
+    overflow: hidden;
+    width: 75vw;
+    padding: 1rem;
+    border: solid var(--main-color) 4px;
+    border-radius: 30px;
+}
+
+.running {
+    display: flex;
+    gap: 2rem;
+    animation: scrolling 14s linear infinite;
+}
+
+.skill-card{
+    color: black;
+    min-width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px 5px;
+    border-radius: 1.2rem;
+    background: linear-gradient(
+        120deg,
+        var(--main-color),
+        var(--secondary-color)
+    );
+    gap: 1rem;
+}
+
+.skill-card img{
+    width: 3rem;
+}
+
+.skill-card p{
+    font-size: 1rem;
+    font-weight: 800;
+}
+
+@media (max-width: 1280px) {
+    .container-services{
+        width: 90%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .service-card{
+        height: 400px;
+        display: flex;
+        padding: 20px 0;
+    }
+    .Service-icon{
+        margin-top: 0;
+        width: 6rem;
+    }
+}
+
+@media (max-width: 800px){
+    .container-services{
+        display: flex;
+        flex-direction: column;
+    }
+    .services h2{
+        font-size: 2.5rem;
+    }
+    .running {
+        gap: 1rem;
+        animation: scrolling 6s linear infinite;
+    }
+    .skill-card img{
+        width: 3rem;
+    }
+    .skill-card p{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 600px){
+    .service-card{
+        width: 80vw;
+    }
+}
+
+@keyframes scrolling {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}

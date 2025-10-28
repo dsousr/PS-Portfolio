@@ -1,0 +1,129 @@
+.contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.contact h2{
+    font-size: 3rem;
+}
+
+.contact form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    flex-direction: column;
+}
+
+.form-group{
+    display: flex;
+    gap: 5rem;
+}
+
+.contact form .input-group input,
+.contact form textarea{
+    width: 100%;
+    padding: 1.2rem;
+    font-size: 1.2rem;
+    color: white;
+    border-radius:20px;
+    border: solid var(--main-color) 2px;
+    margin: 1rem 0;
+    resize: none;
+    background-color: transparent;
+    box-sizing: border-box;
+}
+
+.btn-send-email{
+    width: 100%;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    font-weight: 900;
+    background: linear-gradient(
+        270deg,
+        rgb(0, 0, 250),
+        var(--main-color)
+    );
+    padding: 1rem;
+    border: none;
+    border-radius: 25px;
+    transition: 0.4s ease-in-out;
+}
+
+.btn-send-email:hover{
+    transform: scale(1.02);
+}
+
+.btn-send-email.success {
+    background: linear-gradient(
+        270deg,
+        rgb(0, 255, 0),
+        rgb(2, 109, 2)
+    );
+  color: white;
+  transition: background-color 0.2s;
+}
+
+/*Pop-Up*/
+.popup {
+    min-width: 200px;
+    letter-spacing: 1px;
+    font-weight: 800;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(
+        270deg,
+        green,
+        rgb(145, 204, 145)
+    );
+    color: black;
+    padding: 1rem 2rem;
+    border-radius: 20px;
+    font-size: 1.1rem;
+    text-align: center;
+    z-index: 1000;
+}
+
+@media (max-width: 1280px){
+    .contact form .input-group input,
+    .contact form textarea{
+        padding: 1.2rem;
+        margin: 0.8rem 0;
+    }
+    .contact form{
+        gap: 0.8rem;
+    }
+    .form-group{
+        flex-direction: column;
+        gap: 0;
+    }
+    .contact form textarea{
+        height: 200px;
+    }    
+}
+
+@media (max-width: 800px){
+    .contact form .input-group input,
+    .contact form textarea{
+        font-size: 1.2rem;
+    }
+    .contact h2{
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    .contact form{
+        width: 80vw;
+    }
+    .btn-send-email{
+        font-size: 1rem;
+        padding: 1.2rem 2rem;
+    }
+    .popup {
+        right: 30%;
+    }
+}
